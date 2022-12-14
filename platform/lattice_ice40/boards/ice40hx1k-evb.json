@@ -1,0 +1,26 @@
+{
+  "build": {
+    "core": "ice40hx1k-evb",
+    "cpu": "fpga",
+    "f_cpu": "100000000L",
+    "hwids": [
+      [
+        "0x0403",
+        "0x6010"
+      ]
+    ],
+    "mcu": "iCE40-HX1K-VQ100",
+    "pack": "vq100",
+    "size": "1k",
+    "type": "hx"
+  },
+  "frameworks": [],
+  "name": "Olimex FPGA",
+  "upload": {
+    "maximum_ram_size": 32768,
+    "maximum_size": 32768
+  },
+  "url": "https://github.com/FPGAwars/icezum/wiki",
+  "vendor": "Olimex"
+}
+
