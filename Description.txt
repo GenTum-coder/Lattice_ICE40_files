@@ -1,0 +1,35 @@
+
+Рабочие файлы. (For PC with Endless OS).
+Работают с devboard "Olimex ICE40HX1K-EVB", iceprogduino (Arduino Leonardo).
+
+Build "iceprogduino" into Endless OS.
+Run gnome-terminal into project directory.
+user@endless:~"project directory"$ toolbox enter (if not exist - user@endless:~$ toolbox create)
+user@toolbox:~"project directory"$ sudo dnf install gcc
+user@toolbox:~"project directory"$ make
+user@toolbox:~"project directory"$ exit
+Copy "iceprogduino" to .platformio/packages/tool-iceprogduino
+For iverylog simulator:
+user@endless:~"project directory"$ toolbox enter
+user@toolbox:~"project directory"$ sudo dnf install iverylog
+user@toolbox:~"project directory"$ sudo dnf install gtkwave
+user@toolbox:~"project directory"$ exit
+Into file main.py change:
+"vvp" -> "toolbox run vvp"
+"gtkwave" -> "toolbox run gtkwave"
+user@endless:~"project directory"$ platformio run -t sim
+Or:
+Install GtkWave
+Into file main.py change:
+"gtkwave" -> "flatpak run io.github.gtkwave.GTKWave"
+
+Полезные ссылки ...
+PlatformIO Core (CLI) :
+	https://docs.platformio.org/en/stable/core/index.html
+Devboard "Olimex iCE40HX1K-EVB" :
+	https://www.olimex.com/Products/FPGA/iCE40/iCE40HX1K-EVB/open-source-hardware
+Olimex/iCE40HX1K-EVB :
+	https://github.com/OLIMEX/iCE40HX1K-EVB
+platformio/lattice_ice40 :
+	https://registry.platformio.org/platforms/platformio/lattice_ice40
+
