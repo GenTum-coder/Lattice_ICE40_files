@@ -1,0 +1,22 @@
+# build in EVB
+set_io CLK     15
+set_io BUT1    41
+# set_io BUT2    42
+set_io LED1    40
+set_io LED2    51
+# build in expansion shild
+# set_io leds[0]  1
+# set_io leds[1]  2
+# set_io leds[2]  3
+# set_io leds[3]  4
+# set_io leds[4]  7
+# set_io leds[5]  8
+# set_io leds[6]  9
+# set_io leds[7] 10
+# set_io leds[8] 12
+# set_io leds[9] 13
+set_io B2       9		# 
+set_io B1      10		# 
+set_io A2      12		# yellow
+set_io A1      13		# orange
+
